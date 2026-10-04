@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiLugar - Reserva tu Asiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Barra Superior -->
+    <header class="header">
+        <div class="header-content">
+            <h1 style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="assets/autobus.png" alt="MiLugar Autobús" width="32">
+                MiLugar
+            </h1>
+            <span class="badge">Analisis y Diseño de Software</span>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal con Publicidad Lateral -->
+    <div class="main-layout">
+        
+        <!-- Publicidad Izquierda -->
+        <aside class="ad-sidebar">
+            <div class="ad-card">
+                <div class="ad-icon" style="display: flex; justify-content: center;">
+                    <img src="assets/pizza.png" alt="Pizzería Local" width="70">
+                </div>
+                <h4 class="ad-title">Pizzería Local</h4>
+                <p class="ad-text">2x1 mostrando tu app</p>
+                <span class="ad-tag">Publicidad</span>
+            </div>
+        </aside>
+
+        <!-- Contenedor de la App (Donde JS trabaja) -->
+        <main id="app-container" class="app-container">
+            <!-- JS inyectará el contenido aquí -->
+        </main>
+
+        <!-- Publicidad Derecha -->
+        <aside class="ad-sidebar">
+            <div class="ad-card gradient">
+                <div class="ad-icon" style="display: flex; justify-content: center;">
+                    <img src="assets/sombrero-de-graduado.png" alt="Universidad del Sur" width="75">
+                </div>
+                <h4 class="ad-title blue">Universidad del Sur</h4>
+                <p class="ad-text">Inscripciones Abiertas.<br>Estudia con nosotros.</p>
+                <button class="btn-ad">Ver planes</button>
+                <br>
+                <span class="ad-tag">Publicidad</span>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Banner Publicitario Inferior -->
+    <footer class="footer-ad">
+        Publicidad: ¡Muestra esta app y obtén 10% de descuento en la cafetería de la Base Centro!
+    </footer>
+
+    <!-- Lógica de la aplicación -->
+    <script src="app.js"></script>
+</body>
+</html>
