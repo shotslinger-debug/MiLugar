@@ -2,7 +2,6 @@ from datetime import datetime, timezone
 from typing import Optional
 from sqlmodel import SQLModel, Field, UniqueConstraint
 
-
 class Usuario(SQLModel, table=True):
     __tablename__ = "usuarios"
     id: Optional[int] = Field(default=None, primary_key=True)
@@ -33,7 +32,7 @@ class Viaje(SQLModel, table=True):
     numero_unidad: str
     hora_salida_estimada: datetime
     estado: str = "En Espera"
-    capacidad: int = 14
+    capacidad: int = 21
 
 class Reserva(SQLModel, table=True):
     __tablename__ = "reservas"
